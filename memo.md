@@ -24,7 +24,7 @@ abs(x);
 ```c++
 (a + (b - 1)) / b
 ```
-## 文字列操作
+## string
 #### 検索
 ```c++
 string s = "ABC";
@@ -32,6 +32,12 @@ if(s.find("AB") < string::npos) {
   cout << "AB" <<endl;
 }
 ```
+#### 切り出し
+```c++
+string s = "ABC";
+s.substr(n,m)
+```
+n番目以降をm文字切り出す
 ## vector
 #### 宣言
 ```c++
