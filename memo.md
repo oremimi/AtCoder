@@ -47,7 +47,35 @@ vector<int> vec(N);//Nは要素数
 ```c++
 sort(vec.begin(), vec.end());
 ```
+#### イテレーター取得
+```c++
+auto result = std::find(v.begin(), v.end(), 1);
+```
+## map
+#### 宣言
+```c++
+map<string, int> data;
+```
+#### 追加
+```c++
+data[key]++;
+```
+#### for
+```c++
+for (auto elm : poll) {
+    
+}
+```
 
+#### 最大要素探し
+```c++
+auto maxPair = max_element(
+      data.begin(), data.end(),
+      [](const pair<string, int>& a, const pair<string, int>& b) -> bool {
+        return a.second < b.second;
+      });
+
+```
 # 数学関連
 ### 三角形の成立条件
  - 二辺の合計が残りの辺より大きい
@@ -55,4 +83,8 @@ sort(vec.begin(), vec.end());
 a + b > c
 b + c > a
 c + a > b
+```
+### 余弦定理
+```
+a2 = b2 + c2 − 2bc*cos∠A
 ```
